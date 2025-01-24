@@ -1,0 +1,105 @@
+@keyframes moveRotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+  
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.earth {
+  margin: 200px;
+  width: 150px;
+  height: 150px;
+  background-image: url(../img/earth.jpg);
+  background-size: contain;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.moon {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/moon.jpg);
+  background-size: contain;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.animationMoveRotate{
+  transform-origin: 25px -275px;
+  animation: moveRotate 8s linear infinite;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.start {
+  margin: 50px;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:linear-gradient(to bottom,  #63974b 5%, #72b352 100%);
+	background-color: #63974b;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+
+}
+.start:hover {
+	background:linear-gradient(to bottom, #72b352 5%, #63974b 100%);
+	background-color:#72b352;
+}
+.start:active {
+	position:relative;
+	top:1px;
+}
+
+.stop {
+  margin: 50px;
+	box-shadow: 0px 10px 14px -7px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:4px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.stop:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.stop:active {
+	position:relative;
+	top:1px;
+}
+
